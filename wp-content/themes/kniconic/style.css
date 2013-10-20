@@ -1,0 +1,450 @@
+/*
+Theme Name: Kniconic
+Theme URI: http://www.karl-nicoll.net/
+Author: Karl Nicoll
+Author URI: http://www.karl-nicoll.net/
+Description: Kniconic is a Wordpress child theme based on "Iconic One" by Themonic.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: Orange, White, Black, one-column, two-columns, right-sidebar, custom-background, flexible-width, custom-menu, full-width-template, post-formats, rtl-language-support, theme-options, custom-colors
+Template:iconic-one
+*/
+
+/* =Imports styles from the parent theme
+-------------------------------------------------------------- */
+@import url('../iconic-one/style.css');
+
+/* =Page general
+-------------------------------------------------------------- */
+body {
+	color:#333;
+	font-family: "Lato", monospace, Helvetica, Arial, sans-serif;
+	font-size:10pt;
+}
+
+#page {
+	max-width:1200px;
+}
+
+#primary {
+	border:0;
+}
+
+/* =Navigation
+-------------------------------------------------------------- */
+
+.themonic-nav .current-menu-item > a,
+.themonic-nav .current-menu-ancestor > a,
+.themonic-nav .current_page_item > a,
+.themonic-nav .current_page_ancestor > a,
+.themonic-nav .current_page_parent > a {
+		background: none repeat scroll 0 0 #FF6608;
+		color:#FFF;
+		font-weight: bold;
+}
+
+.themonic-nav ul.nav-menu,
+.themonic-nav div.nav-menu > ul {
+	background:none repeat scroll 0 0 #F3F3F3;
+	border-bottom: 5px solid #FF6608;
+	border-top: 1px solid #ededed;
+	border-radius:0 15px 0 0;
+	display: inline-block !important;
+	text-align: left;
+	width: 100%;
+}
+
+.themonic-nav li:hover {
+    background: none repeat scroll 0 0 #FFA605;
+}
+
+select.selectnav {
+	margin: 10px;
+	min-width:300px;
+	text-align: center;
+}
+
+/* =Masthead
+-------------------------------------------------------------- */
+
+.site-header {
+	border:0;
+	margin-bottom:0;
+	height:auto;
+}
+
+hgroup a {
+	padding:0;
+}
+
+.kniconic-logo {
+	float: left;
+    margin: 10px 0;
+    padding: 17px 0;
+}
+
+@media screen and (max-width: 768px) {
+	
+	.site-header {
+		text-align:center;
+	}
+ 
+	.kniconic-logo {
+		float: none;
+		margin:0;
+		padding: 10px;
+	}
+}
+
+/* =Headings
+-------------------------------------------------------------- */
+
+.entry-header .entry-title {
+	font-size: 36px;
+}
+
+.entry-header .entry-title,
+.entry-header .date{
+	text-align:center;
+}
+
+.entry-content h1,
+.comment-content h1 {
+	color:#008E91;
+	font-size: 16px;	
+}
+
+/* =Content
+-------------------------------------------------------------- */
+
+.entry-content a {
+	color:#2277FF;
+	text-decoration:none;
+}
+
+.entry-content a:hover {
+	color:#BF4C06;
+}
+
+.entry-content h1,
+.comment-content h1,
+.entry-content h2,
+.comment-content h2,
+.entry-content h3,
+.comment-content h3,
+.entry-content h4,
+.comment-content h4,
+.entry-content h5,
+.comment-content h5,
+.entry-content h6,
+.comment-content h6 {
+	margin:24px 0 12px 0;
+}
+
+/* =Forms (inc. search)
+-------------------------------------------------------------- */
+
+/* =Form elements */
+button, input, textarea {
+    background: #F7F7F7;
+}
+
+input:focus, textarea:focus {
+	background:#FFF;
+}
+
+.entry-content #searchform {
+	width:50%;
+	margin:auto;
+}
+
+#searchform {
+	padding-left:77px;
+	overflow:hidden;
+}
+
+.widget-area #s,
+#s {
+	border:1px solid #ccc;
+	border-radius:5px 0 0 5px;
+	border-right:0;
+	display:block;
+	float:left;
+	margin:0 0 0 -77px;
+	width:100%;
+	padding:8px;
+	height:14px;
+	line-height:14px;
+}
+
+#searchsubmit {
+    background: url(./img/magnifying-glass.png) no-repeat;
+	background-color:#FF6608;
+	background-position: center;
+	border:0;
+	border-radius:0 5px 5px 0;
+    color: #FFFFFF;
+	text-indent:-99999px;
+	width:60px;
+	display:block;
+	float:right;
+	margin:0 0 0 0;
+	padding: 8px 0;
+	height:32px;
+	line-height:32px;
+	
+	-moz-transition:background-color 0.5s;
+    -webkit-transition:background-color 0.5s;
+    -o-transition:background-color 0.5s;
+    transition:background-color 0.5s;
+}
+
+#s:focus + #searchsubmit:hover, #respond #submit:hover {
+	cursor: pointer;
+}
+
+#s:focus + #searchsubmit, input[type=submit]:hover {
+	background-color: #FFA605;
+	color:#FFF;
+}
+
+form input, form textarea {
+	border-radius:5px;
+}
+
+input[type=submit] {
+	-moz-transition:background-color 0.5s, color 0.5s;
+    -webkit-transition:background-color 0.5s, color 0.5s;
+    -o-transition:background-color 0.5s, color 0.5s;
+    transition:background-color 0.5s, color 0.5s;
+}
+
+/* =Widgets
+-------------------------------------------------------------- */
+
+.widget-area .widget{
+	margin-bottom:2em;
+}
+
+/* =Edit links
+-------------------------------------------------------------- */
+
+.entry-header .edit-link a {
+	border:1px solid #ccc;
+	border-radius:4px;
+	color:#444;
+	float:right;
+	margin-top:-50px;
+	padding:5px 10px;
+	text-decoration: none;
+}
+
+.entry-header .edit-link a:hover {
+	border:1px solid #999;
+	color:#111;
+}
+
+/* =Sidebar-less content 
+-------------------------------------------------------------- */
+
+.no-sidebar {
+	float:none;
+	width:auto;
+	margin:0;
+}
+
+/* =Post format
+-------------------------------------------------------------- */
+
+.entry-header .date {
+	margin-top:-20px;
+	margin-left:0.5em;
+	color:#999;
+}
+
+/* =Post and page navigation
+-------------------------------------------------------------- */
+.site-content nav {
+	border: 1px solid #EDEDED;
+	background:#f9f9f9;
+	clear: both;
+	overflow: hidden;
+	padding:7px 20px;
+	margin-top:-24px;
+	border-radius:0 0 10px 10px;
+}
+
+.nav-previous, .previous-image {
+	padding-bottom:0;
+}
+
+.site-content article {
+	border-bottom: 5px solid #E9E9E9;
+	margin-bottom:24px;
+}
+
+/* =Comments
+-------------------------------------------------------------- */
+
+.comments-area article.comment header {
+	float:none;
+	background:none repeat scroll 0 0 #F2F2F2;
+	margin:0;
+	padding:5px 10px;
+	overflow:hidden;
+	line-height:40px;
+}
+
+article.comment img,
+article.comment cite {
+	float:left;
+}
+
+.comments-area article header cite,
+.comments-area article header time {
+	margin-left:15px;
+	line-height: 30px;
+	vertical-align: middle;
+}
+
+article.comment header > a {
+	float:right;
+}
+
+.comments-title {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 24px;
+}
+
+.nav-single + .comments-area, #comment-nav-above, #respond {
+    margin: 24px 0;
+}
+
+article.comment {
+	padding:0;
+}
+
+.comment-content {
+	padding:5px 10px 0 10px;
+}
+
+article.comment, #respond {
+	border:3px solid #F3F3F3;
+	border-radius: 5px;
+	overflow:hidden;
+}
+
+.comment .reply  span {
+	display:none;
+}
+
+.comment .edit-link a.comment-edit-link,
+.comment .reply a.comment-reply-link {
+	background:#F7F7F7;
+	color:#333;
+	float:right;
+	text-decoration:none;
+	border:2px solid #F3F3F3;
+	border-bottom:0;
+	border-right:0;
+	border-radius:10px 0 0 0;
+	padding:5px 1em;
+	
+	-moz-transition:background-color 0.5s, color 0.5s;
+    -webkit-transition:background-color 0.5s, color 0.5s;
+    -o-transition:background-color 0.5s, color 0.5s;
+    transition:background-color 0.5s, color 0.5s;
+}
+
+.comment .edit-link a.comment-edit-link {
+	padding-left:2em;
+}
+
+.comment .edit-link a.comment-edit-link:hover,
+.comment .reply a.comment-reply-link:hover {
+	background-color:#1BCC6C;
+	color:#FFF;
+}
+
+.comment .children article {
+	border-left-width: 6px;
+	border-top-left-radius:0;
+	border-bottom-left-radius:0;
+	margin-top:-12px;
+}
+
+.comment-awaiting-moderation {
+	font-weight:bold;
+	color:red;
+	text-align: center;
+	padding-top:1em;
+}
+
+.comment-awaiting-moderation + .comment-content {
+	color:#CCC !important;
+}
+
+.comment-awaiting-moderation:before {
+	content:'[ ';
+}
+
+.comment-awaiting-moderation:after {
+	content:' ]';
+}
+
+#respond {
+	border:0;
+	padding:0;
+}
+
+/* =Widgets
+-------------------------------------------------------------- */
+
+.widget-area .widget-title {
+	border-radius:5px 5px 0 0;
+}
+
+/* =Quotes
+-------------------------------------------------------------- */
+blockquote footer {
+	text-align:right;
+}
+
+/* =Page bottom
+-------------------------------------------------------------- */
+body .site {
+	margin-bottom:0;
+}
+
+footer[role="contentinfo"] {
+    line-height: 1;
+}
+
+.site-wordpress {
+	color:#666;
+	float:none;
+	max-width:1248px;
+	text-align: right;
+	margin: 0 auto 24px auto;
+}
+
+.site-wordpress a {
+	border-bottom: 1px dashed #666;
+	color:inherit;
+}
+
+#colophon {
+	color:#666;
+	border-top: 2px solid #FF6608;
+	border-radius:0 0 0 20px;
+	margin-bottom:24px;
+}
+
+/* =[Plugin] Contact Forms 7 styles
+-------------------------------------------------------------- */
+
+.wpcf7-form-control {
+	display:block;
+}
