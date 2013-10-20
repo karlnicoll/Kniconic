@@ -109,20 +109,6 @@ hgroup a {
 	text-align:center;
 }
 
-.entry-content h1,
-.comment-content h1 {
-	color:#008E91;
-	font-size: 16px;	
-}
-
-/* =Content
--------------------------------------------------------------- */
-
-.entry-content a {
-	color:#2277FF;
-	text-decoration:none;
-}
-
 .entry-content a:hover {
 	color:#BF4C06;
 }
@@ -139,8 +125,26 @@ hgroup a {
 .comment-content h5,
 .entry-content h6,
 .comment-content h6 {
-	margin:24px 0 12px 0;
+	margin:24px 0 0.2em 0;
+	font-weight:300;
+	color:#008E91;
+	font-size: 24px;	
 }
+
+/* =Content
+-------------------------------------------------------------- */
+
+.entry-content a {
+	color:#2277FF;
+	text-decoration:none;
+}
+
+.entry-content p,
+ .entry-summary p,
+ .comment-content p,
+ .mu_register p {
+	 margin:0 0 1em;
+ }
 
 /* =Forms (inc. search)
 -------------------------------------------------------------- */
