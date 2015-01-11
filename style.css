@@ -191,6 +191,7 @@ input:focus, textarea:focus {
     color: #FFFFFF;
 	text-indent:-99999px;
 	width:60px;
+	min-width:0;
 	display:block;
 	float:right;
 	margin:0 0 0 0;
